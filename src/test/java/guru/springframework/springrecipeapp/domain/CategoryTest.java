@@ -1,9 +1,9 @@
 package guru.springframework.springrecipeapp.domain;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class CategoryTest {
 
@@ -13,21 +13,20 @@ public class CategoryTest {
     public void setUp(){
         category = new Category();
     }
-    
+
     @Test
-    public void getId() throws Exception{
+    public void getId() throws Exception {
         Long idValue = 4l;
-
         category.setId(idValue);
-
         assertEquals(idValue, category.getId());
     }
 
     @Test
-    public void getDescription() throws Exception{
+    public void getDescription() {
+
     }
 
     @Test
-    public void getRecipes() throws Exception{
+    public void getRecipes() {
     }
 }
