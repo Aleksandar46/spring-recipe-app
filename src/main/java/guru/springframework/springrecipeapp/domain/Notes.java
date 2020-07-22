@@ -1,7 +1,10 @@
 package guru.springframework.springrecipeapp.domain;
 
+import lombok.EqualsAndHashCode;
+
 import javax.persistence.*;
 
+@EqualsAndHashCode(exclude = {"recipe"})
 @Entity
 public class Notes {
 

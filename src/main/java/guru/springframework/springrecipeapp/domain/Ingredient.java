@@ -1,8 +1,11 @@
 package guru.springframework.springrecipeapp.domain;
 
+import lombok.EqualsAndHashCode;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 
+@EqualsAndHashCode(exclude = {"recipe"})
 @Entity
 public class Ingredient {
 
