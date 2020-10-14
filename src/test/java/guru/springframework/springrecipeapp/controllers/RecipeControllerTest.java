@@ -45,4 +45,14 @@ public class RecipeControllerTest {
                 .andExpect(view().name("recipe/show"))
                 .andExpect(model().attributeExists("recipe"));
     }
+
+//    @Test
+//    public void testGetRecipeNotFound() throws Exception{
+//        MockMvc mockMvc = MockMvcBuilders.standaloneSetup(controller).build();
+//        when(recipeService.findById(anyLong())).thenThrow(NotFoundException.class);
+//        mockMvc.perform(get("/recipe/3/show"))
+//                .andExpect(status().isNotFound())
+//                .andExpect(view().name("404error"));
+//
+//    }
 }
